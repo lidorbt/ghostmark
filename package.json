@@ -1,0 +1,71 @@
+{
+  "name": "ghostmark",
+  "version": "2.1.0",
+  "description": "A powerful Vite plugin that invisibly marks JSX elements with debug attributes for seamless development and testing",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "plugin",
+    "lovable-tagger",
+    "jsx",
+    "tsx",
+    "react",
+    "preact",
+    "solid",
+    "data-attributes",
+    "ghostmark",
+    "development",
+    "devtools",
+    "component-detection",
+    "component-tagging",
+    "tagger",
+    "tagging",
+    "component-tagger",
+    "vite-tagging",
+    "vite-plugin-tagging",
+    "vite-tagger"
+  ],
+  "author": "Lidorbt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lidorbt/ghostmark.git"
+  },
+  "homepage": "https://github.com/lidorbt/ghostmark#readme",
+  "bugs": {
+    "url": "https://github.com/lidorbt/ghostmark/issues"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.25.9",
+    "estree-walker": "^3.0.3",
+    "magic-string": "^0.30.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
